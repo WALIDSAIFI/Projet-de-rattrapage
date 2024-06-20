@@ -58,22 +58,24 @@ ajouter.addEventListener('submit',function(event){
 
  }
 
+ document.getElementById('vider').addEventListener('click', function(event){
+    event.preventDefault(); 
+    document.getElementById('tva').value = '';
+    document.getElementById('nom').value = '';
+    document.getElementById('telephone').value = '';
+    document.getElementById('adresse').value = '';
+    document.getElementById('messageTva').innerText = '';
+    document.getElementById('messageNom').innerText = '';
+    document.getElementById('messageTel').innerText = '';
+    document.getElementById('messageAdre').innerText = '';
+});
 
 
- const vider=document.getElementById('vider');
-
- vider.addEventListener('click', function(){
-    tva.innerText='';
-    nom.innerText= '';
-    tel.innerText= '';
-    adresse.innerText= '';
- });
+ 
 
 
 
 });
-}else{
-    console.log("ddddddddddddddddddddddddd")
 }
 
 
