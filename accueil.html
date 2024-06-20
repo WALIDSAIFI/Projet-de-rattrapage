@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Ajouter  nouveau client</h1>
+    <form id="enregistrement-client">
+        <label for="tva">Numéro de TVA :</label>
+        <input type="text" id="tva" >
+        <span id="messageTva"></span>
+        
+        <label>Nom :</label>
+        <input type="text" id="nom">
+        <span id="messageNom"></span>
+
+        <label >Numéro de téléphone :</label>
+        <input type="tel" id="telephone">
+        <span id="messageTel"></span>
+    
+        <label>Adresse :</label>
+        <input type="text" id="adresse">
+        <span id="messageAdre"></span>
+        
+        <button type="submit">Enregistrer</button>
+        <button id="vider" >vider form</button>
+        <span id="messageAjouter"></span>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
