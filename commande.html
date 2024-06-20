@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Page de commande</title>
+</head>
+<body>
+    <h1>Commande de Livraison</h1>
+    <form id="orderForm">
+        <label >Client Expéditeur:</label>
+        <select id="expediteur" >
+        </select>
+      
+        <label >Client Destinataire:</label>
+        <select id="destinataire">
+        </select>
+        <span id="messageClient"></span>
+        <label>Poids du colis:</label>
+        <input type="number" id="poids">
+        <br>
+        <span id="messagePoids"></span>
+        <label>Type de livraison:</label>
+        <div class="afficheradio">
+        <input type="radio" id="normale"  value="normale" checked>
+        <label>Normale</label>
+        <input type="radio" id="urgente"  value="urgente">
+        <label>Urgente</label>
+    </div>
+
+        <button type="submit">Soumettre</button>
+        <span id="messageCommandes" ></span>
+    </form>
+   
+
+</body>
+<script src="script.js"></script>
+</html>
